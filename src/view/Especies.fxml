@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="317.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EspeciesController">
+   <children>
+      <AnchorPane prefHeight="386.0" prefWidth="665.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="173.0" fitWidth="180.0" layoutX="398.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/letrero.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="287.0" layoutY="14.0" text="Especies">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnEditar" layoutX="202.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnActEditar" prefHeight="25.0" prefWidth="56.0" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Editar" />
+            <ComboBox fx:id="ComboBEspecies" layoutX="391.0" layoutY="74.0" onAction="#OnActCombEsp" prefWidth="150.0" styleClass="ChoiceBox1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtFiltro1" layoutX="127.0" layoutY="74.0" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <Button fx:id="btnGuardar" layoutX="85.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnActGuardar" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Guardar" />
+            <Button fx:id="btnFiltrar" layoutX="596.0" layoutY="74.0" mnemonicParsing="false" onAction="#OnActFiltrar" prefHeight="25.0" prefWidth="56.0" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Filtrar" />
+            <Button fx:id="btnEliminar" layoutX="325.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnActEliminar" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Eliminar" />
+            <Label layoutX="66.0" layoutY="78.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Filtro 1" />
+            <Label layoutX="317.0" layoutY="78.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Filtro 2" />
+            <Button fx:id="btnAtras" layoutX="414.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnActAtras" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Atras" />
+            <Label layoutX="55.0" layoutY="118.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Id" />
+            <TextField fx:id="txtIdEspecies" layoutX="228.0" layoutY="114.0" onKeyPressed="#KeyPressed_IdEsp" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <Label layoutX="39.0" layoutY="150.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Tipo Especie" />
+            <Label layoutX="34.0" layoutY="184.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Nombre Cientifico" />
+            <Label layoutX="36.0" layoutY="218.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Nombre Comun" />
+            <Label layoutX="53.0" layoutY="249.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Peso" />
+            <Label layoutX="51.0" layoutY="277.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Tamaño" />
+            <Label layoutX="50.0" layoutY="309.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Caracteristicas" />
+            <TextField fx:id="txtTipoEspecie" layoutX="228.0" layoutY="146.0" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtNomCientifico" layoutX="228.0" layoutY="177.0" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtNomComun" layoutX="228.0" layoutY="211.0" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtPeso" layoutX="228.0" layoutY="242.0" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtTamaño" layoutX="228.0" layoutY="273.0" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtCaracteristicas" layoutX="228.0" layoutY="305.0" styleClass="TextArea1" stylesheets="@../estilos/estilo1.css" />
+            <Label layoutX="450.0" layoutY="142.0" prefHeight="38.0" prefWidth="86.0" text="Especies">
+               <font>
+                  <Font name="Bernard MT Condensed" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

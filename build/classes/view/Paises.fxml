@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaisesController">
+   <children>
+      <AnchorPane prefHeight="382.0" prefWidth="647.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="292.0" layoutY="14.0" text="Paises">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnEditar" layoutX="217.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnActEditar" prefHeight="25.0" prefWidth="56.0" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Editar" />
+            <ComboBox fx:id="ComboBPai" layoutX="401.0" layoutY="74.0" onAction="#OnActCombPai" prefWidth="150.0" styleClass="ChoiceBox1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtFiltro1" layoutX="120.0" layoutY="74.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <Button fx:id="btnGuardar" layoutX="105.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnActGuardar" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Guardar" />
+            <Button fx:id="btnFiltrar" layoutX="583.0" layoutY="74.0" mnemonicParsing="false" onAction="#OnActFiltrar" prefHeight="25.0" prefWidth="56.0" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Filtrar" />
+            <Button fx:id="btnEliminar" layoutX="347.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnActEliminar" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Eliminar" />
+            <Label layoutX="59.0" layoutY="78.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Filtro 1" />
+            <Label layoutX="327.0" layoutY="78.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Filtro 2" />
+            <Button fx:id="btnAtras" layoutX="451.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnActAtras" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Atras" />
+            <Label layoutX="85.0" layoutY="151.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Id" />
+            <Label layoutX="85.0" layoutY="196.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Pais" />
+            <Label layoutX="85.0" layoutY="242.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Continente" />
+            <TextField fx:id="txtIdPaises" layoutX="256.0" layoutY="147.0" onKeyPressed="#KeyPressed_IdPai" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtNomPais" layoutX="256.0" layoutY="192.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtContinente" layoutX="256.0" layoutY="238.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <ImageView fitHeight="173.0" fitWidth="180.0" layoutX="410.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/letrero.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="458.0" layoutY="144.0" prefHeight="38.0" prefWidth="80.0" text="Países">
+               <font>
+                  <Font name="Bernard MT Condensed" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrimeraVistaController">
+   <children>
+      <SplitPane dividerPositions="0.21298701298701297" prefHeight="476.0" prefWidth="772.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="446.0" prefWidth="264.0">
+               <children>
+                  <Label layoutX="26.0" layoutY="107.0" styleClass="Label2" stylesheets="@../estilos/estilo1.css" text="Parques y Reservas">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="86.0" fitWidth="117.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Manuel-Antonio-Costa-Rica.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnMantenimiento" layoutX="26.0" layoutY="166.0" mnemonicParsing="false" onAction="#OnActMantenimiento" prefHeight="26.0" prefWidth="109.0" styleClass="Button2" stylesheets="@../estilos/estilo1.css" text="Mantenimiento">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEntradas" layoutX="26.0" layoutY="223.0" mnemonicParsing="false" onAction="#OnActEntradas" prefHeight="27.0" prefWidth="109.0" styleClass="Button2" stylesheets="@../estilos/estilo1.css" text="Entradas">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnValoraciones" layoutX="26.0" layoutY="277.0" mnemonicParsing="false" onAction="#OnActValoraciones" prefHeight="27.0" prefWidth="109.0" styleClass="Button2" stylesheets="@../estilos/estilo1.css" text="Valoraciones">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReportes" layoutX="26.0" layoutY="336.0" mnemonicParsing="false" onAction="#OnActReportes" prefHeight="27.0" prefWidth="109.0" styleClass="Button2" stylesheets="@../estilos/estilo1.css" text="Reportes">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="48.0" layoutY="124.0" styleClass="Label2" stylesheets="@../estilos/estilo1.css" text=" Nacionales">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSalir" layoutX="27.0" layoutY="430.0" mnemonicParsing="false" onAction="#OnActSalir" prefHeight="25.0" prefWidth="109.0" styleClass="Button2" stylesheets="@../estilos/estilo1.css" text="Salir">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnVisitantes" layoutX="27.0" layoutY="384.0" mnemonicParsing="false" onAction="#OnActVisitantes" prefHeight="25.0" prefWidth="109.0" styleClass="Button2" stylesheets="@../estilos/estilo1.css" text="Visitantes">
+                     <font>
+                        <Font name="Bell MT" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="122.0" prefWidth="112.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fitHeight="460.0" fitWidth="778.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/beach.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="155.0" layoutY="20.0" text="Parques y Reservas Nacionales" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="129.0" layoutY="107.0" text="Bienvenidos al sistema de" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="37.0" />
+                     </font></Label>
+                  <Label layoutX="69.0" layoutY="212.0" text="Parques y Reservas Nacionales de" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="37.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="196.0" layoutY="314.0" text="Costa Rica" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="37.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="86.0" fitWidth="142.0" layoutX="385.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/costarica.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="89.0" layoutX="14.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/sinac.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

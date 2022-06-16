@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EntradasController">
+   <children>
+      <AnchorPane prefHeight="413.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="36.0" layoutY="62.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Nombre Visitante" />
+            <Label layoutX="300.0" layoutY="62.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Tipo Tarjeta" />
+            <Label layoutX="265.0" layoutY="105.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Días" />
+            <Label layoutX="36.0" layoutY="105.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Entrada a" />
+            <DatePicker fx:id="dateDiasEntrada" layoutX="314.0" layoutY="101.0" stylesheets="@../estilos/estilo1.css" />
+            <Button fx:id="btnAgregar" layoutX="521.0" layoutY="101.0" mnemonicParsing="false" onAction="#OnActAgregar" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Agregar" />
+            <ChoiceBox fx:id="choiceTipoTarjeta" layoutX="371.0" layoutY="58.0" prefWidth="150.0" styleClass="ChoiceBox1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtNombreVisitante" layoutX="134.0" layoutY="58.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <Label layoutX="65.0" layoutY="343.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="SUBTOTAL:" />
+            <Label layoutX="65.0" layoutY="374.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="I.V.A (13%):" />
+            <Label layoutX="258.0" layoutY="374.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="TOTAL A PAGAR:" />
+            <Button fx:id="btnVender" layoutX="525.0" layoutY="370.0" mnemonicParsing="false" onAction="#OnActVender" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Vender" />
+            <Label fx:id="lblImpuesto" layoutX="138.0" layoutY="374.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="0" />
+            <Label fx:id="lblSubtotal" layoutX="138.0" layoutY="344.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="0" />
+            <Label fx:id="lblTotal" layoutX="361.0" layoutY="374.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="0" />
+            <ChoiceBox fx:id="choiceLugarEntrada" layoutX="100.0" layoutY="101.0" prefWidth="150.0" styleClass="ChoiceBox1" stylesheets="@../estilos/estilo1.css" />
+            <Label layoutX="225.0" layoutY="14.0" text="Vender Entrada">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAtras" layoutX="429.0" layoutY="370.0" mnemonicParsing="false" onAction="#OnActAtras" prefHeight="25.0" prefWidth="59.0" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Atrás" />
+            <TextField fx:id="txtSitio" layoutX="191.0" layoutY="193.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <Label layoutX="47.0" layoutY="197.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Sitio" />
+            <Label layoutX="46.0" layoutY="249.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Fecha de Visita" />
+            <Label layoutX="48.0" layoutY="298.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Precio" />
+            <TextField fx:id="txtFechaVisita" layoutX="191.0" layoutY="245.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtPrecio" layoutX="191.0" layoutY="294.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <Label layoutX="45.0" layoutY="151.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Id" />
+            <TextField fx:id="txtIdEntrada" layoutX="189.0" layoutY="147.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <Button layoutX="530.0" layoutY="319.0" mnemonicParsing="false" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Button" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="410.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/playa.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 feb. 2022, 15:15:45
+    Author     : monge
+*/
+
+Button { -fx-background-color: #000000;
+         -fx-border-width: 2;
+         -fx-text-fill: #000000;
+         -fx-font-family: "Times New Roman";
+         -fx-font-style: italic;
+         -fx-font-size: 20px;
+         -fx-background-radius: 10 10 10 10;
+         -fx-border-radius: 10 10 10 10;
+}
+
+Button:pressed { -fx-background-color: #000000;
+	-fx-text-fill: #000000;
+	-fx-font-weight: bold;
+}
+
+.Button1{
+  -fx-background-color: #71E29CE0;
+  -fx-border: none;
+  -fx-color: #000000;
+  -fx-padding: 5px;
+  -fx-text-align: center;
+  -fxtext-decoration: none;
+  -fx-display: inline-block;
+  -fx-font-size: 14px;
+}
+.Button2{
+  -fx-background-color: #699CD5C2;
+  -fx-border: none;
+  -fx-color: #000000;
+  -fx-padding: 5px;
+  -fx-text-align: center;
+  -fxtext-decoration: none;
+  -fx-display: inline-block;
+  -fx-font-size: 14px;
+}
+.TextField1{
+    -fx-background-color: #71E29C82;
+    -fx-border: FFFFFF;
+}
+.TextArea1{
+    -fx-background-color: #71E29C82;
+    -fx-border: FFFFFF;
+}
+.ChoiceBox1{
+    -fx-background-color: #71E29C82;
+    -fx-border: #000000;
+}
+.Label1{
+    -fx-background-color: #71E29C82;
+}
+.Label2{
+    -fx-background-color: #699CD5C2;
+}
+.mainFxmlClass {
+
+}

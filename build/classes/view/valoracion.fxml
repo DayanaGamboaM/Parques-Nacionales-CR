@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ValoracionController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/prueba2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="239.0" layoutY="14.0" text="Valoracion" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="88.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Escribe aqui tu comentario:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="27.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="79.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="128.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="180.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="231.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Label layoutX="38.0" layoutY="87.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="ID Valoracion:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="132.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Parque ID">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="180.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Refugio ID">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="232.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="Calificacion:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIdValoracion" layoutX="157.0" layoutY="85.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <ImageView fx:id="imgMono1" fitHeight="38.0" fitWidth="41.0" layoutX="27.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/mono.gif" />
+               </image></ImageView>
+            <ImageView fx:id="imgMono2" fitHeight="38.0" fitWidth="41.0" layoutX="79.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/mono.gif" />
+               </image></ImageView>
+            <ImageView fx:id="imgMono3" fitHeight="38.0" fitWidth="41.0" layoutX="128.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/mono.gif" />
+               </image></ImageView>
+            <ImageView fx:id="imgMono4" fitHeight="38.0" fitWidth="41.0" layoutX="180.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/mono.gif" />
+               </image></ImageView>
+            <ImageView fx:id="imgMono5" fitHeight="38.0" fitWidth="41.0" layoutX="231.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/mono.gif" />
+               </image></ImageView>
+            <Button fx:id="btnAtras" layoutX="504.0" layoutY="331.0" mnemonicParsing="false" onAction="#OnActAtras" prefHeight="25.0" prefWidth="59.0" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Atrás" />
+            <Label layoutX="63.0" layoutY="351.0" styleClass="Label1" stylesheets="@../estilos/estilo1.css" text="¡Agradecemos tu valoracion!">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnGuardar" layoutX="418.0" layoutY="331.0" mnemonicParsing="false" onAction="#OnActGuardar" prefHeight="26.0" prefWidth="66.0" styleClass="Button1" stylesheets="@../estilos/estilo1.css" text="Guardar" />
+            <TextField fx:id="txtParId" layoutX="157.0" layoutY="130.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <TextField fx:id="txtRefId" layoutX="157.0" layoutY="178.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="27.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="79.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="128.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="180.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2ff7aed0" height="38.0" layoutX="230.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="41.0" />
+            <ImageView fx:id="imgMonoArr1" fitHeight="38.0" fitWidth="41.0" layoutX="29.0" layoutY="285.0" onMouseClicked="#MouseClicked1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgMonoArr2" fitHeight="38.0" fitWidth="41.0" layoutX="81.0" layoutY="285.0" onMouseClicked="#MouseClicked2" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgMonoArr3" fitHeight="38.0" fitWidth="41.0" layoutX="130.0" layoutY="285.0" onMouseClicked="#MouseClicked3" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgMonoArr4" fitHeight="38.0" fitWidth="41.0" layoutX="182.0" layoutY="285.0" onMouseClicked="#MouseClicked4" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgMonoArr5" fitHeight="38.0" fitWidth="41.0" layoutX="231.0" layoutY="285.0" onMouseClicked="#MouseClicked5" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="txtPuntaje" layoutX="157.0" layoutY="230.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" text="0" />
+            <TextField fx:id="txtComentario" layoutX="361.0" layoutY="130.0" prefHeight="155.0" prefWidth="195.0" styleClass="TextField1" stylesheets="@../estilos/estilo1.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
